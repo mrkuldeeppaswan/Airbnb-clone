@@ -29,8 +29,8 @@ module.exports.createListing = async (req, res) => {
         query: req.body.listing.location,
         limit: 1,
     }).send();
-    console.log(response.body.features[0].geometry);
-    res.send("done!");
+    // console.log(response.body.features[0].geometry);
+    // res.send("done!");
 
     let url = req.file.path;
     let filename = req.file.filename;
